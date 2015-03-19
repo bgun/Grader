@@ -6,6 +6,22 @@ import java.util.Scanner;
 
 public class Exercises {
 
+    // Don't change the method names, return types, or parameters.
+    public static String HelloName(String name) {
+        /**
+         * Exercise 0:
+         * Given a name, return "Hello <name>!"
+         * If the name is "Access Code", return "Programming is awesome!" instead.
+         */
+
+        String greeting = "Hello "+name+"!";
+        if(name.equals("Access Code")) {
+            greeting = "Programming is awesome!";
+        }
+
+        return greeting; // Change this line to return your answer instead of an empty string.
+    }
+
     public static Boolean GreaterThan50(Integer num) {
         /**
          *  Exercise 1:
@@ -15,20 +31,25 @@ public class Exercises {
          */
 
         // Write your solution here.
+        boolean gt = num > 50;
 
-        return false; // Change this line to return your answer instead of false.
+        return gt; // Change this line to return your answer instead of false.
     }
 
     public static String PotatoPotato() {
         /**
          *  Exercise 2:
-         *  Using a for loop, build a string consisting of the string "potato" repeated
-         *  fifteen times, with no spaces. Return that string.
+         *  Using a for loop, make a string consisting of the string "potato" repeated
+         *  fifteen times, with no spaces. Return the string.
          */
 
         // Write your solution here.
+        String output = "";
+        for(int i = 0; i < 15; i++) {
+            output += "potato";
+        }
 
-        return ""; // Change this line to return your answer instead of a blank string.
+        return output; // Change this line to return your answer instead of a blank string.
     }
 
     public static String WhileInput() {
@@ -41,8 +62,15 @@ public class Exercises {
          */
 
         // Write your solution here.
+        Scanner keyboard = new Scanner(System.in);
+        String input = " ";
+        String concat = "";
+        while(!input.equals("")) {
+            input = keyboard.nextLine();
+            concat += input;
+        }
 
-        return ""; // Change this line to return your answer instead of a blank string.
+        return concat; // Change this line to return your answer instead of a blank string.
     }
 
     public static void main(String[] args) {
@@ -50,6 +78,8 @@ public class Exercises {
 
         // Don't modify these lines, but you can comment or uncomment them to
         // grade or skip questions while you test.
+        grader.gradeExercise("HelloName","Ben");
+        grader.gradeExercise("HelloName","Access Code");
         grader.gradeExercise("GreaterThan50",51);
         grader.gradeExercise("GreaterThan50",50);
         grader.gradeExercise("PotatoPotato");

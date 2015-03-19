@@ -16,8 +16,16 @@ public class Grader {
     private static int failCount = 0;
 
     public Grader() {
-        // Answer hash keys are methodName|argument since sometimes we need to test
+        // Answer hash keys are methodName|argument so we can test
         // multiple states. This is fragile.
+        answerKey.put("HelloName|Ben", new Object[]{
+            "", // Helper text for the person grading
+            "Hello Ben!" // Expected answer
+        });
+        answerKey.put("HelloName|Access Code", new Object[]{
+            "", // Helper text for the person grading
+            "Programming is awesome!" // Expected answer
+        });
         answerKey.put("GreaterThan50|51", new Object[]{
             "", // Helper text for the person grading
             true // Expected answer
@@ -31,7 +39,7 @@ public class Grader {
             "potatopotatopotatopotatopotatopotatopotatopotatopotatopotatopotatopotatopotatopotatopotato" // Expected answer
         });
         answerKey.put("WhileInput", new Object[]{
-            "Type a list of user inputs. When testing, use \"horse\", \"battery\", \"staple\".", // Helper text
+            "Type a list of words, and a blank line when finished. When testing, use \"horse\", \"battery\", \"staple\".", // Helper text
             "horsebatterystaple" // Expected answer
         });
     }
