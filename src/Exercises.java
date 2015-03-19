@@ -14,6 +14,7 @@ public class Exercises {
          * If the name is "Access Code", return "Programming is awesome!" instead.
          */
 
+        // Write your solution below.
         String greeting = "Hello "+name+"!";
         if(name.equals("Access Code")) {
             greeting = "Programming is awesome!";
@@ -30,7 +31,7 @@ public class Exercises {
          *  Return false if num is less than 50.
          */
 
-        // Write your solution here.
+        // Write your solution below.
         boolean gt = num > 50;
 
         return gt; // Change this line to return your answer instead of false.
@@ -43,7 +44,7 @@ public class Exercises {
          *  fifteen times, with no spaces. Return the string.
          */
 
-        // Write your solution here.
+        // Write your solution below.
         String output = "";
         for(int i = 0; i < 15; i++) {
             output += "potato";
@@ -61,7 +62,7 @@ public class Exercises {
          *  and "staple", return "horsebatterystaple".
          */
 
-        // Write your solution here.
+        // Write your solution below.
         Scanner keyboard = new Scanner(System.in);
         String input = " ";
         String concat = "";
