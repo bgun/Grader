@@ -10,7 +10,7 @@ public class Exercises {
     public static String HelloName(String name) {
         /**
          * Exercise 0:
-         * Given a name, return "Hello <name>!"
+         * Given the above parameter "name", return "Hello <name>!"
          * If the name is "Access Code", return "Programming is awesome!" instead.
          */
 
