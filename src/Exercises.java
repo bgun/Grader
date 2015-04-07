@@ -3,6 +3,7 @@
  */
 
 import java.util.Scanner;
+import java.util.HashMap;
 
 public class Exercises {
 
@@ -53,25 +54,15 @@ public class Exercises {
         return output; // Change this line to return your answer instead of a blank string.
     }
 
-    public static String WhileInput() {
+    public static HashMap<String,String> ReturnHashMapWithOneItem() {
         /**
          *  Exercise 3:
-         *  Using a while loop, repeatedly accept strings from the user until the user
-         *  inputs a blank string. Return a single string that consists of all the user's
-         *  input combined into one long string. For example, if I input "horse", "battery",
-         *  and "staple", return "horsebatterystaple".
          */
 
-        // Write your solution below.
-        Scanner keyboard = new Scanner(System.in);
-        String input = " ";
-        String concat = "";
-        while(!input.equals("")) {
-            input = keyboard.nextLine();
-            concat += input;
-        }
+        HashMap<String,String> hm = new HashMap<String,String>();
+        hm.put("foo","bar");
 
-        return concat; // Change this line to return your answer instead of a blank string.
+        return hm;
     }
 
     public static void main(String[] args) {
