@@ -76,17 +76,8 @@ public class Exercises {
 
     public static void main(String[] args) {
         Grader grader = new Grader();
-
-        // Don't modify these lines, but you can comment or uncomment them to
-        // grade or skip questions while you test.
-        grader.gradeExercise("HelloName","Ben");
-        grader.gradeExercise("HelloName","Access Code");
-        grader.gradeExercise("GreaterThan50",51);
-        grader.gradeExercise("GreaterThan50",50);
-        grader.gradeExercise("PotatoPotato");
-        grader.gradeExercise("WhileInput");
-
+        grader.run();
         // This line prints the test results at the end.
-        grader.printTotals();
+        System.out.println(grader.printTotals());
     }
 }
